@@ -104,9 +104,9 @@ public class AddTransactionFragment extends Fragment{
         Log.d("STATE","date " + date);
         String time = mTimeField.getText().toString();
         String type = typeRadioButton.getText().toString();
-        String desc = mDescField.getText().toString();
-        double price = Double.parseDouble(mPriceField.getText().toString());
-        String payable = payableRadioButton.getText().toString();
+        String desc = mDescField.getText().toString() + "";
+        double price = Double.parseDouble(mPriceField.getText().toString()+ 0);
+        String payable = payableRadioButton.getText().toString()+"";
 
         Transaction transaction = new Transaction(date,time,type,desc,price,payable);
         addTransactionPresenter.addTransaction(transaction,user);

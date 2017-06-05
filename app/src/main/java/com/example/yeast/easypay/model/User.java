@@ -16,8 +16,9 @@ public class User {
         wallet = new Wallet(0);
         bankAccount = new BankAccount(0);
         transactionRepo = TransctionRepo.getInstance();
-        addTransaction(new Transaction("11/01/2540","11.50","income","eiei",100,"bank"));
-        addTransaction(new Transaction("11/0/2254","1231","outcome","qwewq",20,"cash"));
+        addTransaction(new Transaction("Jun 5,2017","21.50","income","mom give",100,"bank"));
+        addTransaction(new Transaction("Jun 5 2017","22.00","income","dad give money",500,"cash"));
+        addTransaction(new Transaction("Jun 6 2018","12.31","outcome","shabu",300,"cash"));
     }
     public Wallet getWallet(){
         return wallet;
