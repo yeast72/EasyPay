@@ -38,4 +38,9 @@ public class Transaction {
     public String getPayable(){
         return this.payable;
     }
+
+    @Override
+    public String toString() {
+        return getDate() + " " + getTime() + " " + getType() + " " + getDescripton() + " " + getPrice() + " " + getPayable();
+    }
 }

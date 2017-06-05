@@ -5,7 +5,7 @@ package com.example.yeast.easypay.model;
  */
 
 public interface Payable {
-    public void pay(int amount);
-    public void add(int amount);
-    public int getCurrentMoney();
+    public void pay(double amount);
+    public void add(double amount);
+    public double getCurrentMoney();
 }

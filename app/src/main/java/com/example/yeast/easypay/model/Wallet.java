@@ -4,10 +4,10 @@ package com.example.yeast.easypay.model;
  * Created by Administrator on 27/5/2560.
  */
 
-class Wallet implements Payable{
-    private int cash;
+public class Wallet implements Payable{
+    private double cash;
 
-    public Wallet(int cash){
+    public Wallet(double cash){
         this.cash = cash;
     }
     public Wallet(){
@@ -15,17 +15,17 @@ class Wallet implements Payable{
     }
 
     @Override
-    public int getCurrentMoney(){
+    public double getCurrentMoney(){
         return  this.cash;
     }
 
     @Override
-    public void pay(int cash){
+    public void pay(double cash){
         this.cash -= cash;
     }
 
     @Override
-    public void add(int cash){
+    public void add(double cash){
         this.cash += cash;
     }
 }

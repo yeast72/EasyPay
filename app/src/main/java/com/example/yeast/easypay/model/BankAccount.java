@@ -4,26 +4,24 @@ package com.example.yeast.easypay.model;
  * Created by Administrator on 27/5/2560.
  */
 
-class BankAccount implements Payable{
-    private String idAccount;
-    private int money;
+public class BankAccount implements Payable{
+    private double money;
 
-    public BankAccount(String idAccount){
-        this.idAccount = idAccount;
-        this.money = 0;
+    public BankAccount(double money){
+        this.money = money;
     }
     @Override
-    public void pay(int amount) {
-        this.money -= money;
+    public void pay(double amount) {
+        this.money -= amount;
     }
 
     @Override
-    public void add(int amount) {
-        this.money += money;
+    public void add(double amount) {
+        this.money += amount;
     }
 
     @Override
-    public int getCurrentMoney() {
+    public double getCurrentMoney() {
         return money;
     }
 }
